@@ -10,15 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <title>WebStudio</title>
-
 </head>
 
-    <!-- Шапка вебсторінки -->
+    
     <header class="header">
         <div class="container header-container">
         <nav class="header-nav">
-           
-            <a class="logo header-logo" >Web<span class="logo-accent">Studio</span></a>
+            <a
+             class="logo header-logo" >Web<span class="logo-accent">Studio</span></a>
             <ul class="nav-list">
                 <li class="nav-item">
                     <a 
@@ -47,11 +46,110 @@
                     </li>
                 </ul>
             </address>
+            <button class="burger-btn" type="button">
+                <svg class="icon-burger" width="24" height="24">
+                  <use href="./images/burger.svg"></use>
+                </svg>
+            </button>
             </div>
+
+             <div class="mobile-menu">
+        <div class="mobile-menu-container">
+
+            <button type="button" class="mobile-close-btn">
+          <svg
+            class="mobile-close-icon"
+            width="8"
+            height="8"
+          >
+            <use
+              href="./images/icons.svg#icon-cross"
+            ></use>
+          </svg>
+          </button>
+
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link current" href="./index.html">Studio</a>
+              </li>
+
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Portfolio</a>
+              </li>
+
+              <li class="mobile-nav-item">
+                <a class="mobile-nav-link" href="">Contacts</a>
+              </li>
+            </ul>
+        </nav>
+
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li class="mobile-address-item">
+                <a class="mobile-address-link current" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-address-item">
+                <a
+                  class="mobile-address-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-social-list">
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a class="social-link" href="#"
+                ><svg
+                  class="social-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
-<!-- Основний вміст сторінки -->
- <main>
+
+<main>
     <section class="hero">
         <div class="container">
         <h1 class="hero-title">
@@ -62,8 +160,7 @@
     type="button">Order Service</button>
         </div>
     </section>
-  
-    
+   
    <section class="feature">
     <div class="container feature-container">
         <h2 class="visually-hidden">Feature</h2>
@@ -83,9 +180,6 @@
                     Our goal is to identify the business problem to walk away with the perfect and creative solution. 
                 </p>
             </li>
-
-
-           
             <li class="feature-item">
                 <div class="feature-container-icon">
                  <svg class="feature-icon" width="64" height="64">
@@ -98,7 +192,6 @@
                     Bring the key message to the brand's audience for the best price within the shortest possible time.
                 </p>
             </li>
-
             <li class="feature-item">
             <div class="feature-container-icon">
             <svg class="feature-icon" width="64" height="64">
@@ -110,7 +203,6 @@
                     Research and confirm brands with the strongest digital growth opportunities and minimize risk.
                 </p>
             </li>
-
             <li class="feature-item">
                 <div class="feature-container-icon">
             <svg class="feature-icon" width="64" height="64">
@@ -124,15 +216,14 @@
             </li>
         </ul>
     </div>
-    </section>
-   
-    
+    </section>    
+
     <section class="team">
-        <div class="container">
+        <div class="team-container">
         <h2 class="team-title">Our Team</h2>
         <ul class="team-list">
             <li class="team-item">
-                <img class="team-image" src="./images/img-1.jpg"
+                <img class="team-image" srcset="./images/team/team-1-min.jpg 1x, ./images/team/team-1@2x-min.jpg 2x" src="./images/team/team-1-min.jpg"
                  width="264" 
                  height="260" 
                  alt="Mark Guerrero-Product Designer">
@@ -176,7 +267,7 @@
 
             </li>
             <li class="team-item">
-                <img  class="team-image" src="./images/img-2.jpg"
+                <img  class="team-image" srcset="./images/team/team-2-min.jpg 1x, ./images/team/team-2@2x-min.jpg 2x" src="./images/team/team-2-min.jpg"
                  width="264" 
                  height="260" 
                  alt="Tom Ford-Frontend Developer">
@@ -220,7 +311,7 @@
 
             </li>
             <li class="team-item">
-                <img class="team-image" src="./images/img-3.jpg"
+                <img class="team-image" srcset="./images/team/team-3-min.jpg 1x, ./images/team/team-3@2x-min.jpg 2x" src="./images/team/team-3-min.jpg"
                  width="264" 
                  height="260" 
                  alt="Camila Garcia-Marketing">
@@ -263,7 +354,7 @@
                 </div>
             </li>
             <li  class="team-item">
-                <img class="team-image" src="./images/img-4.jpg"
+                <img class="team-image" srcset="./images/team/team-4-min.jpg 1x, ./images/team/team-4@2x-min.jpg 2x" src="./images/team/team-4-min.jpg"
                  width="264" 
                  height="260" 
                  alt="Daniel Wilson-UI Designer">
@@ -310,13 +401,13 @@
     </section>
 
    <section class="portfolio">
-        <div class="container">
+        <div class="portfolio-container">
     <h2 class="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
-
-            <li class="portfolio-item">
+ <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-5.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-1-min.jpg 1x,
+                 ./images/portfolio/img-1@2x-min.jpg 2x" src="./images/portfolio/img-1-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Banking App">
@@ -336,7 +427,8 @@
 
             <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-6.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-2-min.jpg 1x,
+                 ./images/portfolio/img-2@2x-min.jpg 2x" src="./images/portfolio/img-2-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Cashless Payment">
@@ -353,7 +445,8 @@
 
             <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-7.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-3-min.jpg 1x,
+                 ./images/portfolio/img-3@2x-min.jpg 2x" src="./images/portfolio/img-3-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Meditation App">
@@ -370,7 +463,8 @@
 
             <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-8.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-4-min.jpg 1x,
+                 ./images/portfolio/img-4@2x-min.jpg 2x" src="./images/portfolio/img-4-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Taxi Service">
@@ -387,7 +481,8 @@
 
             <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-9.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-5-min.jpg 1x,
+                 ./images/portfolio/img-5@2x-min.jpg 2x" src="./images/portfolio/img-5-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Screen Illustrations">
@@ -404,7 +499,8 @@
 
             <li class="portfolio-item">
                 <div class="portfolio-thumb">
-                <img class="portfolio-image" src="./images/img-10.jpg"
+                <img class="portfolio-image" srcset="./images/portfolio/img-6-min.jpg 1x,
+                 ./images/portfolio/img-6@2x-min.jpg 2x" src="./images/portfolio/img-6-min.jpg"
                  width="360" 
                  height="300" 
                  alt="Online Courses">
@@ -422,15 +518,19 @@
     </section>
  </main>
  
-<footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo-wrapper">
+
+<footer class="page-footer">
+        <div class="container footer-container">
+            <div class="page-footer-logo">
     <a
-    class="footer-logo item-logo" href="index.html">Web<span class="accent">Studio</span>
+    class="logo footer-logo" href="index.html">Web<span class="accent">Studio</span>
     </a>
+
     <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital marketing & growth solutions.
-    </p>
+  Increase the flow of customers and sales for your business with digital marketing & growth solutions.
+</p>
+
+
     </div>
 <div class="footer-social-wrapper">
     <p class="footer-social-title">Social media</p>
